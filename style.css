@@ -1,0 +1,42 @@
+body{
+    background-color: blue;
+}
+
+h1{
+    color : white;
+    font-size: 3.5rem;
+}
+
+.montitre{
+    margin: 100px auto 20px auto;
+
+}
+
+.navbar{
+    width: fit-content;
+   
+}
+
+.contenu{
+    padding: 20px;
+    margin-top: 20px;
+   
+}
+
+p{
+    color: white;
+}
+
+ul,li{
+    color: white;
+}
+
+.gras{
+    font-weight: 700;
+}
+
+
+.img{
+    width: 200px;
+    height: 200px;
+}
