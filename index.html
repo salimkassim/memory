@@ -11,13 +11,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+<div class="container">
   <header>
-    <h1>ENI - MEMORY</h1>
+    <h1 class="d-flex justify-content-center montitre">ENI - <span class="gras">MEMORY</span></h1>
   </header>
+  <nav class="navbar navbar-expand bg-dark border-bottom border-body" data-bs-theme="dark">
+    <!-- Navbar content -->
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="inscrire.html">S'inscrire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="connecter.html">Se connecter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="jouer.html">Jouer</a>
+            </li>
+        </div>
+      </div>
+  </nav>
+  <section class="d-flex justify-content-center">
+        <div class="contenu bg-dark ">
+           <p>Bienvenue sur le site du Memory de l'ENI.</p>
+           <P>Venez jouer avec nous et faites le meilleur score possible.</P>
+           <dt>Règle du jeu</dt>
+           <ul>
+            <li>Retourner deux cartes. Si les images sont identitiques, le jeu laisse les cartes visibles.</li>
+            <li>Si les images sont différentes, les cartes se retournent faces cachées là où elles etaient. </li>
+            <li>La partie est terminée lorsque toutes les cartes ont été assemblées par paires.</li>
+           </ul>
+           <div class="text-center">
+            <img src="ressources/memory-legume/memory_detail.png" class="rounded img" alt="jeu memory">
+          </div>
+           
+           <p>Si vous voulez voulez souvenir de votre score. Inscrivez-vous via le formulaire.</p>
+           <p>Le jeu garde les 5 meilleurs scores.</p>
+           <p>Si vous voulez relancer une partie cliquez sur <span class="gras">la barre d'espace</span></p>
+    </div>
+  </section>
            
         
-    </div>
+</div>
 
 </body>
 </html>
