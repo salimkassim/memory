@@ -1,5 +1,6 @@
 body{
     background-color: blue;
+    color: white;
 }
 
 h1{
@@ -7,8 +8,13 @@ h1{
     font-size: 3.5rem;
 }
 
+h2{
+    color : white;
+    font-size: 2rem;
+}
+
 .montitre{
-    margin: 100px auto 20px auto;
+    margin: 50px auto 20px auto;
 
 }
 
@@ -23,14 +29,6 @@ h1{
    
 }
 
-p{
-    color: white;
-}
-
-ul,li{
-    color: white;
-}
-
 .gras{
     font-weight: 700;
 }
@@ -39,4 +37,8 @@ ul,li{
 .img{
     width: 200px;
     height: 200px;
+}
+
+.form-text{
+    color: white;
 }
