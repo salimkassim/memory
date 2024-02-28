@@ -42,3 +42,11 @@ h2{
 .form-text{
     color: white;
 }
+
+.error {
+    color: #e74c3c;
+  }
+
+  .imgValide{
+    width: 32px;
+  }
