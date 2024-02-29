@@ -2,26 +2,64 @@ $(function(){
 
 
 
-      $('#choixMemory').on('change', choix);
+      $('#choixMemory').on('change', choixMemory);
+      $('#choixTaille').on('change', choixTaille);
 
 })
 
-function choix(){
+function choixMemory(){
+    var id = parseInt($('#choixMemory').val());
 
-    alert($('#choixMemory').val());
+    console.log(id);
 
-    switch(n) {
+    switch(id) {
         case 1:
-         //execute code block 1
+        $("#imgMemory").attr("src", "ressources/alphabet-scrabble/memory_detail_scrabble.png").attr("style", "display:block!important");
          break;
         case 2:
-         //execute code block 2
+            $("#imgMemory").attr("src", "ressources/animaux/memory_detail_animaux.png").attr("style", "display:block!important");
+         break;
+         case 3:
+            $("#imgMemory").attr("src", "ressources/animauxAnimes/memory_detail_animaux_animes.png").attr("style", "display:block!important");
+         break;
+         case 4:
+            $("#imgMemory").attr("src", "ressources/animauxdomestiques/memory_detail_animaux_domestiques.png").attr("style", "display:block!important");
+         break;
+         case 5:
+            $("#imgMemory").attr("src", "ressources/chiens/memory_details_chiens.png").attr("style", "display:block!important");
+         break;
+         case 6:
+            $("#imgMemory").attr("src", "ressources/dinosaures/memory_detail_dinosaures.png").attr("style", "display:block!important");
+         break;
+         case 7:
+            $("#imgMemory").attr("src", "ressources/dinosauresAvecNom/memory_details_dinosaures_avec_nom.png").attr("style", "display:block!important");
+         break;
+         case 8:
+            $("#imgMemory").attr("src", "ressources/memory-legume/memory_detail.png").attr("style", "display:block!important");
+         break;
+        default:
+        // code to be executed if n is different from case 1 and 2
+       }            
+}
+
+function choixTaille(){
+    var id = parseInt($('#choixTaille').val());
+
+    console.log(id);
+
+    switch(id) {
+        case 1:
+        
+         break;
+        case 2:
+           
          break;
         default:
         // code to be executed if n is different from case 1 and 2
        }            
 
 }
+
 
 
 

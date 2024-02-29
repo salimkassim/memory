@@ -55,3 +55,10 @@ h2{
     width: 75px;
     margin-bottom: 63px;
   }
+
+  #imgMemory{
+    margin: 30px;
+    width: 200px;
+    height: 200px;
+    display: none!important;
+  }
