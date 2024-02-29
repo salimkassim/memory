@@ -40,16 +40,13 @@ function connection(email,mdp){
         utilisateurEnregistrer = JSON.parse(utilisateurEnregistrer);
       }
 
-
-    var utilisateurEnregistrerLength = utilisateurEnregistrer.length;
-    console.log(utilisateurEnregistrerLength);
     //console.log('connect Mail : ' + email);
     //console.log('connect mdp : ' + mdp);
 
     var connexion = false;
 
     for (i in utilisateurEnregistrer){
-        debugger;
+        //debugger;
         console.log( i, utilisateurEnregistrer[i]);
 
         if(utilisateurEnregistrer[i].email == email && utilisateurEnregistrer[i].mdp == mdp ){
@@ -62,7 +59,10 @@ function connection(email,mdp){
      }
 
 if (connexion) {
-    alert('connecté')
+    alert('connecté');
+   location.href = "profil.html";
+       
+
 }else{
     alert('non connecté');
 }
