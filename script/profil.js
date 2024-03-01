@@ -61,6 +61,15 @@ function choixTaille(){
 }
 
 
+var estConnecteProfil = sessionStorage.getItem("estConnecte");
+
+console.log("est connecté :"+estConnecteProfil);
+
+if(estConnecteProfil){
+    $("<li class='nav-item'><a class='nav-link' href='profil.html'>Profil</a></li>").insertAfter("li.profilIteml"); 
+}
+
+
 
 
 // id de mon utilisateur connecté 

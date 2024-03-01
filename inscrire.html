@@ -14,63 +14,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container py-5">
-  <header>
-    <h1 class="d-flex justify-content-center montitre">ENI - <span class="gras"> MEMORY</span></h1>
-  </header>
-  <nav class="navbar navbar-expand bg-dark border-bottom border-body" data-bs-theme="dark">
-    <!-- Navbar content -->
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="inscrire.html">S'inscrire</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="connecter.html">Se connecter</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="profil.html">Profil</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="jouer.html">Jouer</a>
-            </li>
+  <main>
+    <div class="container py-5">
+      <header>
+        <h1 class="d-flex justify-content-center montitre">ENI - <span class="gras"> MEMORY</span></h1>
+      </header>
+      <nav class="navbar navbar-expand bg-dark border-bottom border-body" data-bs-theme="dark">
+        <!-- Navbar content -->
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="inscrire.html">S'inscrire</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="connecter.html">Se connecter</a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link" href="profil.html">Profil</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="jouer.html">Jouer</a>
+                </li>
+            </div>
+          </div>
+      </nav>
+      <section class="d-flex justify-content-center">
+        <div class="contenu bg-dark ">
+            <h2>Inscrivez-vous</h2>
+            <form  id="inscription" >
+                  <div class="form-group mb-6">
+                    <label for="nom" class="form-label">Nom d'utlisateur</label>
+                    <input type="text" class="form-control" id="nom" name="nom" placeholder="3 caractère minimum">
+                    <!-- <div class="imgValide" ><img src="ressources/check.svg" class="" alt=""></div> -->
+                  </div>
+                  <div class="form-group mb-6">
+                    <label for="email" class="form-label">Entrez votre email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="votre email">
+                  </div>
+                  <div class="form-group mb-6">
+                    <label for="mdp" class="form-label">Mot de passe</label>
+                    <input type="password" class="form-control" id="mdp" name="mdp" placeholder="votre mot de passe"  >
+                    <div class="form-text" id="basic-addon4">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</div>
+                  </div>
+                  <div class="form-group mb-6">
+                    <label for="mdpConfirme" class="form-label">Confirmez le mot de passe</label>
+                    <input type="password" class="form-control" id="mdpConfirme" name="mdpConfirme" placeholder="confirmez le mot de passe" >
+                  </div>
+                  <div class="form-group mb-6">
+                    <button class="btn btn-primary" type="submit">Création de compte</button>
+                    <button class="btn btn-primary" type="reset">annuler</button>
+                  </div>
+            </form>
         </div>
-      </div>
-  </nav>
-  <section class="d-flex justify-content-center">
-    <div class="contenu bg-dark ">
-        <h2>Inscrivez-vous</h2>
-        <form  id="inscription" >
-              <div class="form-group mb-3">
-                <label for="nom" class="form-label">Nom d'utlisateur</label>
-                <input type="text" class="form-control" id="nom" name="nom" placeholder="3 caractère minimum">
-                <!-- <div class="imgValide" ><img src="ressources/check.svg" class="" alt=""></div> -->
-              </div>
-              <div class="form-group mb-3">
-                <label for="email" class="form-label">Entrez votre email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="votre email">
-              </div>
-              <div class="form-group mb-3">
-                <label for="mdp" class="form-label">Mot de passe</label>
-                <input type="password" class="form-control" id="mdp" name="mdp" placeholder="votre mot de passe"  >
-                <div class="form-text" id="basic-addon4">Au moins un symbole, un chiffre, ainsi que 6 caractères minimum.</div>
-              </div>
-              <div class="form-group mb-3">
-                <label for="mdpConfirme" class="form-label">Confirmez le mot de passe</label>
-                <input type="password" class="form-control" id="mdpConfirme" name="mdpConfirme" placeholder="confirmez le mot de passe" >
-              </div>
-              <div class="form-group mb-3">
-                <button class="btn btn-primary" type="submit">Création de compte</button>
-                <button class="btn btn-primary" type="reset">annuler</button>
-              </div>
-        </form>
+      </section>   
     </div>
-  </section>   
-</div>
+  </main>
 <script src="script/inscrire.js"></script>
 </body>
 </html>

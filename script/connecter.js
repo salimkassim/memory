@@ -50,9 +50,11 @@ function connection(email,mdp){
         console.log( i, utilisateurEnregistrer[i]);
 
         if(utilisateurEnregistrer[i].email == email && utilisateurEnregistrer[i].mdp == mdp ){
-
+            // Enregistrement de l'utilisateur en local storage
             sessionStorage.setItem("currentUserId", i);
             connexion = true; 
+            // Enregistrement de la connexion a true en local storage
+            sessionStorage.setItem("estConnecte", connexion);
             break;
         }
 
@@ -60,8 +62,7 @@ function connection(email,mdp){
 
 if (connexion) {
     alert('connecté');
-   location.href = "profil.html";
-       
+    location.href = "profil.html";
 
 }else{
     alert('non connecté');
